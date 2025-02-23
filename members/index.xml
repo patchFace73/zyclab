@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>实验室成员 on 石大模式识别与机器学习实验室</title>
-    <link>http://localhost:1313/members/</link>
+    <link>https://devcows.github.io/members/</link>
     <description>Recent content in 实验室成员 on 石大模式识别与机器学习实验室</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/members/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://devcows.github.io/members/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
