@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-cn">
 
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61862&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>石大模式识别与机器学习实验室</title>
+<title>石大文档分析与模式识别实验室</title>
 <meta name="author" content="DevCows" />
 
 
 
 
-<meta name="keywords" content="devcows, hugo, go">
+<meta name="keywords" content="学术会议, 科研项目, go">
 
 
-<meta name="description" content="Site template made by Devcows using Hugo">
+<meta name="description" content="XX大学学术成果展示平台">
 
-<meta name="generator" content="Hugo 0.121.1">
+<meta name="generator" content="Hugo 0.142.0">
 
 
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
 
 
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v6.6.0/css/all.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
@@ -36,7 +36,7 @@
 
 
 
-<link href="/css/custom.css?1740319365" rel="stylesheet">
+<link href="/css/custom.css?1740364987" rel="stylesheet">
 
 
 
@@ -55,7 +55,7 @@
 <link href="/css/owl.theme.css" rel="stylesheet">
 
 
-<link rel="alternate" href="https://devcows.github.io/index.xml" type="application/rss+xml" title="石大模式识别与机器学习实验室">
+<link rel="alternate" href="http://localhost:61862/index.xml" type="application/rss+xml" title="石大文档分析与模式识别实验室">
 
 
 
@@ -64,13 +64,13 @@
 
 
 
-<meta property="og:locale" content="en_us">
-<meta property="og:site_name" content="石大模式识别与机器学习实验室">
-<meta property="og:title" content="石大模式识别与机器学习实验室">
+<meta property="og:locale" content="zh_cn">
+<meta property="og:site_name" content="石大文档分析与模式识别实验室">
+<meta property="og:title" content="石大文档分析与模式识别实验室">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://devcows.github.io/" />
-<meta property="og:description" content="Site template made by Devcows using Hugo">
-<meta property="og:image" content="https://devcows.github.io/img/sharing-default.png">
+<meta property="og:url" content="http://localhost:61862/" />
+<meta property="og:description" content="XX大学学术成果展示平台">
+<meta property="og:image" content="http://localhost:61862/img/sharing-default.png">
 <meta property="og:image:type" content="image/png">
 
 
@@ -79,17 +79,17 @@
   <meta property="og:image:height" content="420">
 
 
-<meta property="og:updated_time" content="2025-02-23T15:46:25&#43;0800">
+<meta property="og:updated_time" content="2024-10-25T00:00:00Z">
 
 
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@GoHugoIO">
-<meta name="twitter:title" content="石大模式识别与机器学习实验室">
+<meta name="twitter:title" content="石大文档分析与模式识别实验室">
 
-<meta name="twitter:image" content="https://devcows.github.io/img/sharing-default.png">
+<meta name="twitter:image" content="http://localhost:61862/img/sharing-default.png">
 
-<meta name="twitter:description" content="Site template made by Devcows using Hugo">
+<meta name="twitter:description" content="XX大学学术成果展示平台">
 
 
     
@@ -101,117 +101,169 @@
 
         
 
-        <header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+        <style>
+  .logo-container {
+      display: flex;
+      align-items: center;
+  }
   
-    <div class="navbar navbar-default yamm " role="navigation" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="/">
-                    
-                      <img src="/img/shzuhead.png" alt="石大模式识别与机器学习实验室 logo" class="hidden-xs hidden-sm" />
-                      <img src="/img/logo-small.png" alt="石大模式识别与机器学习实验室 logo" class="visible-xs visible-sm" />
-                    
-                    <span class="sr-only">石大模式识别与机器学习实验室 - go to homepage</span>
-                </a>
-                <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
-                      <span class="sr-only">Toggle Navigation</span>
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-                </div>
-            </div>
-            
+  .logo-img {
+      height: 40px;   
+      margin-right: 15px;
+  }
+  
+  .logo-text {
+      line-height: 1.2;
+  }
+  
+  .main-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+  }
+  
+  .sub-title {
+      font-size: 14px;
+      color: #666;
+  }
+  
+   
+  @media (max-width: 991px) {
+      .main-title {
+          font-size: 16px;
+      }
+      
+      .logo-img {
+          height: 30px;
+          margin-right: 10px;
+      }
+  }
+  </style>
+<header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+  
+  <div class="navbar navbar-default yamm " role="navigation" id="navbar">
+      <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand home" href="/">
+              
+                  
+                  <div class="logo-container hidden-xs hidden-sm">
+                      <img src="/img/shzu_loge.png" alt="实验室logo" class="logo-img"/>
+                      <div class="logo-text">
+                          <div class="main-title">石河子大学</div>
+                          <div class="sub-title">文档分析与模式识别实验室</div>
+                      </div>
+                  </div>
+                  
+                  <div class="logo-container visible-xs visible-sm">
+                      <img src="/img/shzu_loge.png" alt="实验室logo" class="logo-img"/>
+                      <div class="logo-text">
+                          <div class="main-title">文档分析与模式识别实验室</div>
+                      </div>
+                  </div>
+              
+              <span class="sr-only">石大文档分析与模式识别实验室 - go to homepage</span>
+            </a>
+              <div class="navbar-buttons">
+                  <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle Navigation</span>
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+              </div>
+          </div>
+          
 
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                  
+          <div class="navbar-collapse collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                
 
-                  
-                  
-                  
+                
+                
+                
 
+                
                   
-                    
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown active">
-                    <a href="/">   主页   </a>
-                  </li>
-                  
-                  
-                  
-                  
+                
+                <li class="dropdown active">
+                  <a href="/">主页</a>
+                </li>
+                
+                
+                
+                
 
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown ">
-                    <a href="">研究主题</a>
-                  </li>
-                  
-                  
-                  
-                  
+                
+                <li class="dropdown ">
+                  <a href="/faq">研究方向</a>
+                </li>
+                
+                
+                
+                
 
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown ">
-                    <a href="m11/index.html">成员</a>
-                  </li>
-                  
-                  
-                  
-                  
+                
+                <li class="dropdown ">
+                  <a href="/members/">团队</a>
+                </li>
+                
+                
+                
+                
 
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown ">
-                    <a href="/blog/">学术活动</a>
-                  </li>
-                  
-                  
-                </ul>
-            </div>
-            
+                
+                <li class="dropdown ">
+                  <a href="/blog/">学术活动</a>
+                </li>
+                
+                
+              </ul>
+          </div>
+          
 
-            <div class="collapse clearfix" id="search">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
-                </span>
-                    </div>
-                </form>
-            </div>
-            
-        </div>
-    </div>
+          <div class="collapse clearfix" id="search">
+              <form class="navbar-form" role="search">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <span class="input-group-btn">
+                  <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+              </span>
+                  </div>
+              </form>
+          </div>
+          
+      </div>
+  </div>
 </header>
 
 
 
 
-        
+        <script src="/js/owl.carousel.min.js"></script>
+
 
 
 <section>
@@ -498,7 +550,7 @@
                 <h4>联系方式</h4>
                 <p>
                     石河子大学信息科学与技术学院<br>
-                    〒0993-2057997<br>
+                    <img src="img/icon/dianhuahao.svg" alt="矢量图" width="15" height="15">0993-2057997<br>
                     新疆维吾尔自治区石河子市北四路221号（石河子大学北区绿2）<br>
                     
                 </p>

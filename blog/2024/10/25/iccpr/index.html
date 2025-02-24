@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-cn">
 
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61862&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
@@ -13,18 +13,18 @@
 
 
 
-<meta name="keywords" content="devcows, hugo, go, 计算科学与人工智能">
+<meta name="keywords" content="学术会议, 科研项目, go, 计算科学与人工智能">
 
 
-<meta name="description" content="Site template made by Devcows using Hugo">
+<meta name="description" content="XX大学学术成果展示平台">
 
-<meta name="generator" content="Hugo 0.121.1">
+<meta name="generator" content="Hugo 0.142.0">
 
 
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
 
 
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v6.6.0/css/all.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
@@ -36,7 +36,7 @@
 
 
 
-<link href="/css/custom.css?1740319365" rel="stylesheet">
+<link href="/css/custom.css?1740364987" rel="stylesheet">
 
 
 
@@ -55,7 +55,7 @@
 <link href="/css/owl.theme.css" rel="stylesheet">
 
 
-<link rel="alternate" href="https://devcows.github.io/index.xml" type="application/rss+xml" title="石大模式识别与机器学习实验室">
+<link rel="alternate" href="http://localhost:61862/index.xml" type="application/rss+xml" title="石大文档分析与模式识别实验室">
 
 
 
@@ -64,13 +64,13 @@
 
 
 
-<meta property="og:locale" content="en_us">
-<meta property="og:site_name" content="石大模式识别与机器学习实验室">
+<meta property="og:locale" content="zh_cn">
+<meta property="og:site_name" content="石大文档分析与模式识别实验室">
 <meta property="og:title" content="2024 13th International Conference on Computing and Pattern Recognition">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://devcows.github.io/blog/2024/10/25/iccpr/" />
-<meta property="og:description" content="Site template made by Devcows using Hugo">
-<meta property="og:image" content="https://devcows.github.io/img/banners/ICCPR.png">
+<meta property="og:url" content="http://localhost:61862/blog/2024/10/25/iccpr/" />
+<meta property="og:description" content="XX大学学术成果展示平台">
+<meta property="og:image" content="http://localhost:61862/img/banners/ICCPR.png">
 <meta property="og:image:type" content="image/png">
 
 
@@ -96,23 +96,32 @@
 <meta name="twitter:site" content="@GoHugoIO">
 <meta name="twitter:title" content="2024 13th International Conference on Computing and Pattern …">
 
-<meta name="twitter:image" content="https://devcows.github.io/img/banners/ICCPR.png">
+<meta name="twitter:image" content="http://localhost:61862/img/banners/ICCPR.png">
 
-<meta name="twitter:description" content="Site template made by Devcows using Hugo">
+<meta name="twitter:description" content="XX大学学术成果展示平台">
 
 
     
     <style>
        
-      .caption-center {
-        text-align: center;
-        margin: 0 auto;
-        display: block;
+      #post-content {
+        line-height: 1.6;
       }
-
-      .caption-center img {
-        display: inline-block;
-        margin: 0 auto;
+    
+       
+      #post-content figure figcaption {
+        text-align: center;
+        font-style: italic;
+        margin: 0.5em 0;
+        color: #666;
+      }
+    
+       
+      #post-content p.caption {
+        text-align: center;
+        font-style: italic;
+        margin-top: 0.5em;
+        color: #666;
       }
     </style>
   </head>
@@ -123,111 +132,162 @@
 
         
 
-        <header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+        <style>
+  .logo-container {
+      display: flex;
+      align-items: center;
+  }
   
-    <div class="navbar navbar-default yamm " role="navigation" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="/">
-                    
-                      <img src="/img/shzuhead.png" alt="2024 13th International Conference on Computing and Pattern Recognition logo" class="hidden-xs hidden-sm" />
-                      <img src="/img/logo-small.png" alt="2024 13th International Conference on Computing and Pattern Recognition logo" class="visible-xs visible-sm" />
-                    
-                    <span class="sr-only">2024 13th International Conference on Computing and Pattern Recognition - go to homepage</span>
-                </a>
-                <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
-                      <span class="sr-only">Toggle Navigation</span>
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-                </div>
-            </div>
-            
+  .logo-img {
+      height: 40px;   
+      margin-right: 15px;
+  }
+  
+  .logo-text {
+      line-height: 1.2;
+  }
+  
+  .main-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+  }
+  
+  .sub-title {
+      font-size: 14px;
+      color: #666;
+  }
+  
+   
+  @media (max-width: 991px) {
+      .main-title {
+          font-size: 16px;
+      }
+      
+      .logo-img {
+          height: 30px;
+          margin-right: 10px;
+      }
+  }
+  </style>
+<header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+  
+  <div class="navbar navbar-default yamm " role="navigation" id="navbar">
+      <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand home" href="/">
+              
+                  
+                  <div class="logo-container hidden-xs hidden-sm">
+                      <img src="/img/shzu_loge.png" alt="实验室logo" class="logo-img"/>
+                      <div class="logo-text">
+                          <div class="main-title">石河子大学</div>
+                          <div class="sub-title">文档分析与模式识别实验室</div>
+                      </div>
+                  </div>
+                  
+                  <div class="logo-container visible-xs visible-sm">
+                      <img src="/img/shzu_loge.png" alt="实验室logo" class="logo-img"/>
+                      <div class="logo-text">
+                          <div class="main-title">文档分析与模式识别实验室</div>
+                      </div>
+                  </div>
+              
+              <span class="sr-only">2024 13th International Conference on Computing and Pattern Recognition - go to homepage</span>
+            </a>
+              <div class="navbar-buttons">
+                  <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle Navigation</span>
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+              </div>
+          </div>
+          
 
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                  
+          <div class="navbar-collapse collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                
 
-                  
-                  
-                  
+                
+                
+                
 
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown ">
-                    <a href="/">   主页   </a>
-                  </li>
-                  
-                  
-                  
-                  
+                
+                <li class="dropdown ">
+                  <a href="/">主页</a>
+                </li>
+                
+                
+                
+                
 
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown ">
-                    <a href="">研究主题</a>
-                  </li>
-                  
-                  
-                  
-                  
+                
+                <li class="dropdown ">
+                  <a href="/faq">研究方向</a>
+                </li>
+                
+                
+                
+                
 
-                  
+                
 
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown ">
-                    <a href="m11/index.html">成员</a>
-                  </li>
-                  
-                  
-                  
-                  
+                
+                <li class="dropdown ">
+                  <a href="/members/">团队</a>
+                </li>
+                
+                
+                
+                
 
-                  
+                
 
+                
                   
-                    
-                  
+                
 
-                  
+                
 
-                  
-                  <li class="dropdown active">
-                    <a href="/blog/">学术活动</a>
-                  </li>
-                  
-                  
-                </ul>
-            </div>
-            
+                
+                <li class="dropdown active">
+                  <a href="/blog/">学术活动</a>
+                </li>
+                
+                
+              </ul>
+          </div>
+          
 
-            <div class="collapse clearfix" id="search">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
-                </span>
-                    </div>
-                </form>
-            </div>
-            
-        </div>
-    </div>
+          <div class="collapse clearfix" id="search">
+              <form class="navbar-form" role="search">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <span class="input-group-btn">
+                  <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+              </span>
+                  </div>
+              </form>
+          </div>
+          
+      </div>
+  </div>
 </header>
 
 
@@ -340,21 +400,19 @@
 <h3 id="slfrm-a-novel-signature-local-feature-reconstruction-module-for-offline-signature-verification">SLFRM: A Novel Signature Local Feature Reconstruction Module for Offline Signature Verification</h3>
 <p>硕士研究生 <strong>郑礼东</strong> 在会议中报告其论文 <strong>《SLFRM: A Novel Signature Local Feature Reconstruction Module for Offline Signature Verification》</strong> 相关内容。在他的报告中提出了一种新颖的签名局部特征重建模块（SLFRM），该模块为特征图分配权重，以便捕捉并强调不同签名在局部空间区域内的细微差异。具体而言，所提出的签名局部特征重建模块由两个单元组成：局部空间特征单元（LSFU）和局部空间注意力单元（LSAU）。局部空间特征单元用于提取签名的感受野空间特征，而局部空间注意力单元则用于获取签名的感受野空间注意力图。基于上述两个单元，然后通过标准的卷积操作，生成最终的局部重建特征。因此，所提出的签名局部特征重建模块会对输入特征进行权重重新分配，将更高的权重赋予那些具有更强判别力的特征。这一策略确保了模型在特征学习阶段优先学习细微差异特征。</p>
 <figure class="caption-center"><img src="/img/posts/ICCPR2024/lidong.png"
-         alt="参会人员" width="60%"/><figcaption>
-            <h4>郑礼东</h4><p>参会人员</p>
-        </figcaption>
+    alt="参会人员" width="60%"><figcaption>
+      <h4>郑礼东</h4><p>参会人员</p>
+    </figcaption>
 </figure>
 
-<!-- raw HTML omitted -->
 <h3 id="discovering-optimal-subspaces-in-deep-architectures-for-offline-signature-verification">Discovering Optimal Subspaces in Deep Architectures for Offline Signature Verification</h3>
 <p>硕士研究生 <strong>朱起峰</strong> 在会议中报告其论文 <strong>《Discovering Optimal Subspaces in Deep Architectures for Offline Signature Verification》</strong> 相关内容。在他的报告中提出了一种新颖的框架，该框架通过拉伸和降维深度特征来控制特征的维度，以获取最佳特征。具体来说，深度特征可以通过一个高维投影矩阵进行拉伸，该矩阵的元素是从标准正态分布中随机采样得到的，以此获得更具判别性的表示，然后进一步通过线性判别分析（LDA）进行降维，从而更有效地捕捉不同签名者之间的细微差异。通过这种方式，所学习到的特征可以被缩放至任何最优子空间。</p>
 <figure class="caption-center"><img src="/img/posts/ICCPR2024/qifeng.png"
-         alt="参会人员" width="60%"/><figcaption>
-            <h4>朱起峰</h4><p>参会人员</p>
-        </figcaption>
+    alt="参会人员" width="60%"><figcaption>
+      <h4>朱起峰</h4><p>参会人员</p>
+    </figcaption>
 </figure>
 
-<!-- raw HTML omitted -->
 <h2 id="会议收获">会议收获</h2>
 <p>在参会过程中实验室参会人员积极与其他参会人员交流，充分展现了石河子大学模式识别与机器学习实验室的优良学风和学术氛围。</p>
 
@@ -408,7 +466,7 @@
         <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
             <div class="input-group">
                 <input type="search" name="q" class="form-control" placeholder="Search" />
-                <input type="hidden" name="sitesearch" value="https://devcows.github.io/" />
+                <input type="hidden" name="sitesearch" value="http://localhost:61862/" />
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
                 </span>
